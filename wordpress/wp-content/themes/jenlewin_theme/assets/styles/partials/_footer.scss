@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+}
+
+.social {
+	margin-top: 5px;
+	margin-left: -5px;
+
+}
+
+.copyright {
+	width: 180px;
+	float: right;
+}
+
+
+a.facebook {
+	background-image: url(http://jenlewinstudio.com/wp-content/themes/jenlewin_theme/assets/images/sprite.svg);
+	width: 15px;
+	height: 20px !important;
+	background-position: -6px 21px;
+	background-position-x: -6px;
+	background-position-y: 21px;
+	position: relative;
+	display: inline-block;
+	float:left;
+	color: #fff !important;
+	font-size:0.5px !important;
+	margin:5px !important;
+}
+
+.no-svg .facebook, .no-svg .twitter, .no-svg .tumblr, .no-svg .vimeo, .no-svg .instagram {
+  background-image: url(http://jenlewinstudio.com/wp-content/themes/jenlewin_theme/assets/images/sprite.png);
+}
+
+a.twitter {
+	background-image: url(http://jenlewinstudio.com/wp-content/themes/jenlewin_theme/assets/images/sprite.svg);
+	width: 22px;
+	height: 20px!important;
+	background-position: 128px 21px;
+	background-position-x: 128px;
+	background-position-y: 21px;
+	position: relative;
+	display: inline-block;
+	float: left;
+	color: #fff!important;
+	font-size: 1px !important;
+	margin: 5px!important;
+}
+
+a.tumblr {
+	background-image: url(http://jenlewinstudio.com/wp-content/themes/jenlewin_theme/assets/images/sprite.svg);
+	width: 19px;
+	height: 20px !important;
+	background-position: 95px 21px;
+	background-position-x: 95px;
+	background-position-y: 21px;
+	position: relative;
+	display: inline-block;
+	float:left;
+	color: #fff !important;
+	font-size: 1px !important;
+	margin:5px !important;
+}
+
+a.vimeo {
+	background-image: url(http://jenlewinstudio.com/wp-content/themes/jenlewin_theme/assets/images/sprite.svg);
+	width: 24px;
+	height: 20px!important;
+	background-position: 34px 21px;
+	background-position-x: 34px;
+	background-position-y: 21px;
+	position: relative;
+	display: inline-block;
+	float: left;
+	color: #fff!important;
+	font-size: 1px!important;
+	margin: 5px!important;
+}
+
+a.instagram {
+	background-image: url(http://jenlewinstudio.com/wp-content/themes/jenlewin_theme/assets/images/sprite.svg);
+	width: 20px;
+	height: 20px !important;
+	background-position: 64px 21px;
+	background-position-x: 64px;
+	background-position-y: 21px;
+	position: relative;
+	display: inline-block;
+	float:left;
+	color: #fff !important;
+	font-size: 1px !important;
+	margin:5px !important;
+}
+
+
+
+

@@ -1,0 +1,564 @@
+/* ==========================================================================
+   Jen Lewin Brand Style Guide Style Guide
+   ========================================================================== */
+
+@font-face {
+  font-family: 'FuturaBook';
+  src: url('assets/fonts/futura_book_bt-webfont.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/futura_book_bt-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/futura_book_bt-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('assets/fonts/futura_bold_bt-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('assets/fonts/futuram-webfont.svg#svgfuturam') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'FuturaBold';
+  src: url('assets/fonts/futura_bold_bt-webfont.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/futura_bold_bt-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/futura_bold_bt-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('assets/fonts/futura_bold_bt-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('assets/fonts/futuram-webfont.svg#svgfuturam') format('svg'); /* Legacy iOS */
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+
+/* -------------------------------- 
+
+Colors
+
+-------------------------------- */
+
+$color-1: #ffffff; // White
+$color-2: #848586; // Jen Lewin Studio Gray
+$color-3: #222; // Black for highlights
+$color-4: #e6e6e6; // Light border Color
+$color-5 :#8c8c8c; //color hover on sidebar links
+$color-6: #6b6c6e; // Nav link color
+$red:#ff0000;
+
+$selectionColor: #e6e6e6;
+
+.red {
+	color: $red;
+}
+
+
+// fonts
+
+$primary-font: 'FuturaBook', arial, helvetica;
+$secondary-font: 'Open Sans', sans-serif;
+$tertiary-font: 'FuturaBold', arial, helvetica;
+
+
+/* -------------------------------- 
+
+Typography 
+
+-------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+h1, h2, h3, h4, .project-navigation, #content {
+	color: $color-2;
+	transition: color 0.3s ease;
+	letter-spacing:1px;
+
+}
+
+h1, h2, p {
+	font-size:14px;
+}
+
+h1, h3, h4, .project-navigation, .project-navigation a {
+	font-family: $secondary-font;
+	font-weight:800;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+
+.nav-links, #content {
+	font-family:$primary-font;
+	
+}
+
+
+h3, h4, .nav-links, .exhibit-list {
+	font-size:12px;
+}
+
+h1 {
+	line-height: 1.3em;
+	margin: 0 0 .4em;		
+}
+
+h2 {
+	font-weight: bold;
+	margin: 1em 0;
+	line-height:1.3em;
+	font-family:$tertiary-font;
+	
+}
+
+h3, h4 {
+	margin: 0;
+	line-height:1.3em;
+}
+
+
+.project-navigation {
+	font-size:11px;
+	padding-top:2px;
+
+	 a {
+		 color: $color-2;
+		 transition: color 0.3s ease;
+
+	 	&:visited {
+	 		color: $color-2;
+	 	}
+
+	 	&:hover {
+	 		color:$color-3;
+	 	}
+	 }
+}
+
+.nav-links {
+	font-weight:normal;
+	line-height:18px;
+	color: $color-6;
+	transition: color 0.3s ease;
+
+	&:hover {
+		color: $color-3 !important;
+	}
+
+	&:visited {
+		color: $color-6;
+	}
+}
+
+
+
+p {
+	letter-spacing:1px;
+	font-weight:normal;
+	line-height: 1.3;
+	margin: 10px 0px;
+}
+
+
+a, 
+a:visited {
+	color: $color-3;
+}
+
+a:hover {
+	color: $color-5;
+	transition: color 0.3s ease;
+}
+
+.sidebar-links {
+	text-decoration: underline !important;
+}
+
+.sidebar-content {
+
+	p:first-child{
+		margin:0;
+	}
+
+	a {
+		letter-spacing: 0.5px;
+	}
+}
+
+.exhibit-list {
+	line-height: 1.1em;
+}
+
+/* -------------------------------- 
+
+Custom Templates (Archives, categories, videos)
+
+-------------------------------- */
+
+.space-top {
+	padding-top:15px;
+}
+
+.space-bottom {
+	padding-top:15px;
+}
+
+
+
+.project-display {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top:-5px;
+
+	.indv-project:last-child {
+		float: left !important;
+	}
+}
+
+.indv-project .hentry {
+	margin:0;
+
+	 a {
+		text-decoration: none;
+
+
+		&:hover  h3 {
+			color:$color-3
+		}
+
+		.entry-title {
+			padding-top:5px;
+		}
+	}
+}
+
+.page-id-118 .project-trigger {
+	margin-right:7px;
+}
+
+
+
+.archive .project-trigger  {
+	margin-right: 14px;
+}
+
+.entry-content {
+	margin-top:0;
+	p {
+		margin: 0 0 10px 0;
+
+	}
+}
+
+.page-template .entry-header h1, .page-template .entry-header h1 {
+	display:none;
+}
+
+.single {
+	.entry-content{
+		margin:0;
+		float:right;
+
+		p:first-child{
+			margin-top:0;
+		}
+	}
+
+	.description h2 {
+		margin: 0 0 1em 0;
+	}
+
+	.entry-header {
+		position: relative;
+		width: 100%;
+		float: left;
+
+
+		.post-title {
+			position: relative;
+			float: left;
+			display: inline-block;
+		}
+
+		.project-nav{
+			position: relative;
+			float: right;
+			display: inline-block;
+		}
+	}
+}
+
+.nav-previous{
+	text-align:right;	
+}
+
+.tabs-content 
+	.content{
+		padding:0.9375em;
+	}
+	
+	a {
+		text-decoration: underline;
+	}
+
+
+.tabs-content {
+	margin-bottom: 1.5rem;
+
+	.content{
+		padding:2em;
+	}
+}
+
+.tabs dd, .tabs .team-tab {
+	border-right: 1px solid $color-4;
+	width: 20%;
+}
+
+.team-tab > a:hover {
+	background:#e2e2e2;
+}
+
+dl.tabs dd:first-child {
+	border-left: 1px solid $color-4;
+}
+
+dd.active {
+	background: #efefef;
+	-webkit-transition: color .3s ease;
+	transition: color .3s ease;
+}
+
+dd.active a {
+	color: $color-3 !important;	
+}
+
+dd a:before {
+	content: '+';
+	padding-right: 10px;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+dd.active a:before{
+	content: '–';
+	padding-right: 10px;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+
+.tabs dd > a, .team-tab a {
+	display: block;
+	padding: 2rem 0.5rem 2rem 1.3rem;
+	font-family: $secondary-font;
+	letter-spacing: 1px;
+	color: #848586;
+	text-decoration: none;
+	font-size: 12px;
+	float: right;
+	width: 100%;
+	-webkit-transition: color .3s ease;
+	transition: color .3s ease;
+	font-weight: 800;
+	text-transform: uppercase;
+	background: #efefef;
+}
+
+.team-tab {
+	position: relative;
+	margin-bottom: 0 !important;
+	top: 1px;
+	float: left;
+}
+
+
+.team-tab > a > span {
+	padding-right: 10px;
+}
+
+
+div#oscitas-efs-tabs-1 {
+	margin-top: -2px;
+}
+
+.post-108 .entry-title{
+	display:none;
+}
+
+.page-id-115 .hentry img {
+	width:100%;
+}
+
+.page-id-115 .entry-title {
+	display: none;
+}
+
+.page-id-115 .entry-content, .page-id-108 .entry-content {
+	margin-top:0;
+	padding:0;
+}
+
+#footer a, #footer a:link, #footer a:visited {
+color: $color-2;
+text-decoration: none;
+font-size:11px;
+letter-spacing:1px;
+}
+
+#footer a:hover {
+	color:$color-3;
+}
+
+#footer div{
+	color: $color-2;
+	text-decoration: none;
+}
+
+.copyright .copyright-line a, .copyright .copyright-line p  {
+	height: 12px;
+	font-size:11px;
+	margin: 10px 0;
+}
+
+.copyright-line {
+	height: 9px;
+}
+
+.circle-logo img{
+	padding-top: 7px !important;
+	width: 52px;
+}
+
+div#footer {
+	padding-top: 10px;
+}
+
+.vimeography-thumbnail figcaption p {
+	display: none;
+}
+
+.category-header {
+	position: relative;
+	right: 0px;
+	top: -21px;
+	font-family: FuturaBold,arial,helvetica;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	float: right;
+}
+
+.category-header a {
+	color: red;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: 100;
+}
+
+
+
+/* -------------------------------- 
+
+Responsive
+
+-------------------------------- */
+
+
+@media screen and (min-width: 1020px) and (max-width: 2400px) {
+	.project-display div {
+		padding-left:0;
+	}
+
+	.archive-thumbnail {
+		margin:0;
+		max-height: 168px;
+		overflow: hidden;
+	}
+
+
+}
+
+.ms-slide-info.ms-dir-h {
+	width: auto;
+	display:inline-block;
+	left: 0;
+	text-align: left;
+	min-height:10px !important;
+	z-index:999;
+}
+
+.ms-slide-info .ms-info h3 a {
+	text-decoration: none;
+	color: $color-2;
+}
+
+
+/* -------------------------------- 
+
+Subscribe to MailChimp
+
+-------------------------------- */
+
+.contact-info{
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+
+.subscribe-form {
+	float: left;
+}
+
+.mc4wp-form {
+	margin:0;
+}
+
+
+.subscribe {
+	background-color: $color-4;
+	padding:40px;
+	width:100%;
+	border-radius:8px;
+
+	input[type="email"] {
+		width: 65%;
+		float: left;
+		display: inline-block;
+	}
+
+	input[type="submit"] {
+		height: 35px;
+		background: #848586;
+		color: #fff;
+		border: none;
+		width:35%;
+		margin-left:-3px;
+		border-radius:0;
+	}
+}
+
+
+.menufication-transition-in #menufication-btn {
+	display: block;
+	height: 2020px !important;
+	min-width: 700px !important;
+	right: -30px !important;
+	padding-right: 30px;
+}
+
+.menufication-transition-in-multiple #menu-about {
+	display: block;
+	height: 2020px !important;
+	min-width: 700px !important;
+	left: -30px !important;
+	padding-left: 30px;
+}
+
+
+#menufication-multiple-container, #menufication-non-css3-multiple-container {
+  position: absolute !important;
+  padding-top: 30px !important;
+}
+
+#menufication-scroll-container {
+	width:250px !important;
+	position: absolute !important;
+	padding-top: 30px !important;
+	min-height: 1000px;
+}

@@ -1,0 +1,61 @@
+<div id="vimeography-gallery-{{gallery_id}}" class="vimeography-timber" data-version="{{version}}"{{#gallery_width}} style="max-width: {{gallery_width}};"{{/gallery_width}}>
+
+  <div class="vimeography-thumbnails">
+    {{>videos}}
+  </div>
+
+  {{#paging}}
+    {{> paging}}
+  {{/paging}}
+
+</div> <!-- End Gallery -->
+
+<div class="vimeography-timber vimeography-template-container">
+	<div class="vimeography-timber vimeography-template vimeography-gallery-{{gallery_id}}">
+    <span class="vimeography-controls vimeography-close">&times;</span>
+		<div class="vimeography-video">
+		</div>
+    <div class="vimeography-data">
+      <h1 class="vimeography-title"></h1>
+      <div class="vimeography-description"></div>
+      {{#allow_downloads}}<div class="vimeography-downloads">Download: <div class="vimeography-download-links"></div></div>{{/allow_downloads}}
+      <span class="vimeography-tags"></span>
+    </div>
+	</div>
+</div>
+
+<!-- Custom Theme Javascript -->
+<script type="text/javascript">
+  (function($){
+    $(document).ready(function() {
+      vimeography.timber.set_gallery_id({{gallery_id}});
+
+			{{#playlist}}
+				{{playlist}}
+			{{/playlist}}
+
+      {{#paging}}
+
+        /* Adding a Public Property */
+        vimeography.pagination.request = {
+            _ajax_nonce : '{{pagination_nonce}}',
+            _ajax_url   : '{{ajax_url}}',
+            theme       : 'timber',
+            gallery_id  : {{gallery_id}},
+            per_page    : {{per_page}},
+            limit       : {{limit}},
+            sort        : '{{sort}}'
+        };
+
+        vimeography.pagination.endpoint     = '{{source}}';
+        vimeography.pagination.per_page     = {{per_page}};
+        vimeography.pagination.current_page = {{page}};
+        vimeography.pagination.total        = {{total}};
+
+        vimeography.timber.enable_paging = 1;
+      {{/paging}}
+
+    });
+
+  })(jQuery)
+</script>

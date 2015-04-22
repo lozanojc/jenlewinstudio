@@ -1,0 +1,33 @@
+<div class="vimeography-paging-controls vimeography-group">
+    <a href="#" class="vimeography-paging vimeography-first-page" data-go-to="first" title="First Page">&#9198;</a>
+    <a href="#" class="vimeography-paging vimeography-previous-page" data-go-to="previous" title="Previous Page">&#9666;</a>
+    <span>Page <span class="vimeography-page-number">{{page}}</span> of {{total_pages}}</span>
+    <a href="#" class="vimeography-paging vimeography-next-page" data-go-to="next" title="Next Page">&#9656;</a>
+    <a href="#" class="vimeography-paging vimeography-last-page" data-go-to="last" title="Last Page">&#9197;</a>
+</div>
+<div class="vimeography-loader"></div>
+
+<script type="text/javascript">
+  (function($){
+    $(document).ready(function(){
+
+      var $gallery = $('#vimeography-gallery-{{gallery_id}}');
+
+      //Adding a Public Property
+      vimeography.pagination.request = {
+          _ajax_nonce : '{{pagination_nonce}}',
+          _ajax_url   : '{{ajax_url}}',
+          theme       : 'timber',
+          gallery_id  : {{gallery_id}},
+          per_page    : {{per_page}},
+          limit       : {{limit}},
+          sort        : '{{sort}}'
+      };
+
+      vimeography.pagination.endpoint     = '{{source}}';
+      vimeography.pagination.per_page     = {{per_page}};
+      vimeography.pagination.current_page = {{page}};
+      vimeography.pagination.total        = {{total}};
+    });
+  })(jQuery)
+</script>

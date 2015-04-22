@@ -1,0 +1,325 @@
+/* transitions */
+.eventon_popup_text .eventon_shortcode_btn{
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+/*-- eventon buttons */
+.evo_admin_btn{
+	margin-left:0;
+	border:none;
+	font:bold 14px 'Open Sans';
+	text-transform:uppercase;
+	line-height:150%;
+	display:inline-block;
+	cursor:pointer;
+	box-sizing:border-box;
+	padding:4px 10px;
+	margin-bottom:3px;
+	text-decoration:none;
+}
+#evcal_settings .eventon_guide_btn.button-primary, .evo_admin_btn.button-primary{
+	margin-left:0;
+	background-color: #dfa872;
+	background-image:none;
+	border:none;
+	font:bold 14px 'Open Sans';
+	text-transform:uppercase;
+	line-height:150%;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius:0px;
+	-webkit-border-radius: 0px;
+}
+#evcal_settings .eventon_guide_btn.button-primary:hover, .evo_admin_btn.button-primary:hover{
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#e5a667),to(#da9551));
+	background-image: -webkit-linear-gradient(top,#e5a667,#da9551);
+	background-image: -moz-linear-gradient(top,#e5a667,#da9551);
+	background-image: -ms-linear-gradient(top,#e5a667,#da9551);
+	background-image: -o-linear-gradient(top,#e5a667,#da9551);
+	background-image: linear-gradient(to bottom,#e5a667,#da9551);
+	background-color: #dfa872;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.evo_admin_btn.btn_prime:hover{background-color:#cd935a;}
+.evo_admin_btn.btn_prime{
+	background-color:#dfa872; color:#fff;
+}
+.evo_admin_btn.btn_secondary:hover{background-color:#b04537;}
+.evo_admin_btn.btn_secondary{
+	background-color: #ca594a;
+	color:#fff;	
+}
+.evo_admin_btn.btn_triad{background-color:#d4d4d4;color:#fff;}
+.evo_admin_btn.btn_tritiary{background-color:#487e8a;color:#fff;}
+.evo_admin_btn.btn_tritiary:hover{background-color:#3a717d;}
+
+/* Editor button */
+span.mce_eventon_shortcodes_button, span.mce_EventONShortcodes{
+	background-image: url(../images/icons/evo_shortcode.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+
+#icon-eventon, .eventon_icon, .icon32-posts-ajde_events, #eventon #icon-themes.icon32{
+	background-image: url(../images/icons/eventon_icons.png) !important;
+	background-position: 0px 0px;
+	background-size: auto !important;
+}
+#eventon #icon-themes.icon32 {
+	background-position: -32px 0px !important;
+}
+.icon32-posts-ajde_events {	background-position: 0px 0px !important;}
+.icon32-posts-reservation {	background-position: -96px 0px !important;}
+
+
+/*
+ *	Eventon in-window popup
+ */
+#eventon_popup_outter{
+	z-index:1000;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+}
+#eventon_popup.eventon_shortcode{
+	width:470px
+}
+#eventon_popup{
+	position:relative;
+	z-index:600;
+	width:70%;
+	margin:70px auto 10px;
+	background-color:#fff;
+	padding:20px;
+	top:70px;
+	opacity:0;
+	-webkit-box-shadow: 0 1px 7px 2px #6c6c6c;
+	box-shadow: 0 1px 7px 2px #6c6c6c;
+}
+.eventon_close_pop_btn{
+	cursor:pointer;
+	color:#eaeaea;
+	position:absolute;
+	top:10px;right:10px;
+	font-size:24px;
+}
+#eventon_popup .eventon_popup_text h2{margin:0}
+
+
+/* shortcode popup */
+.eventon_popup_text .eventon_shortcode_btn:hover{
+	border-color:#c6c6c6;
+	background-color:#f8f8f8;
+	color:#444444;
+}
+.eventon_popup_text .eventon_shortcode_btn{
+	margin:0 4px 4px 0;
+	width:230px;
+	float:left;
+	background-color:#f5f5f5;color:#a0a0a0;	
+	border:1px solid #dfdfdf;	
+	border-bottom:3px solid #dfdfdf;
+	
+	height: auto;
+	line-height: 100%;
+	padding: 7px 8px 8px;
+	display: block;
+	text-decoration: none;
+	font-size: 12px;
+	cursor: pointer;	
+	white-space: nowrap;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#eventon_popup .message.bad{
+	background-color:#ca594a;
+	color:#fff;
+}
+#eventon_popup .message.good{
+	background-color:#7fb7c5;
+	color:#fff;
+}
+#eventon_popup .message{
+	display:none;
+	background-color:#efcfaf;
+	color:#915b25;
+	margin:0 -20px -20px;
+	padding:5px 20px;
+}
+.eventon_popup_text input{
+	padding:7px
+}
+#eventon_loading{
+	display:none;
+	margin:-20px 0 0 -20px;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:url(../images/loading_animation.gif) center center no-repeat;
+}
+
+
+
+/*-- widget --*/
+#eventon_widget_settings .eventon_widget_top{
+	margin:-12px -12px 0px -12px;
+	background-color:#efefef;
+	border-top:3px solid #dfa872;
+	border-bottom:1px solid #dfdfdf;
+	padding:15px 0;
+}
+#eventon_widget_settings .eventon_widget_top p{
+	margin:0;
+	background:url(../images/widget_eventon_logo.png) top center no-repeat;
+	height:26px;
+}
+#eventon_widget_settings .divider{
+	margin:0 -12px 0px;	
+	border-bottom:1px solid #dfdfdf;
+}
+
+.evo_widget_outter{
+	margin:0 -12px 0;
+}
+.evowig em{
+	background-color:#f6efe8;
+	padding:7px 11px;
+	display:block;
+	color:#c3b9af;
+	font: italic 12px 'open sans',arial;
+	line-height:110%;
+}
+
+.evo_wig_item{
+	border-bottom:1px solid #dfdfdf;
+	position:relative;
+}
+
+.evowig input{
+	background-color: transparent;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	outline: 0;
+	width: 100%;
+	resize:none;
+	vertical-align:bottom;
+	overflow:hidden;
+	font: italic 15px 'open sans',arial;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	box-shadow:none;
+	padding:7px 11px;
+}
+.evowig input:focus{
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	box-shadow:none
+}
+#eventon_widget_settings .evo_wig_item p{
+	padding:6px;margin:0;
+	font: italic 13px 'open sans',arial;
+}
+.evo_wug_hid{display:none}
+#eventon_widget_settings .evo_wig_item p.evowig_chbx{
+	cursor:pointer;
+	background-color:#dfa872;
+	width:46px; height:35px;
+	display:block;
+	float:left;
+	margin-right:8px;
+	margin-bottom:0;
+	padding:0;
+}
+#eventon_widget_settings .evo_wig_item:hover p.evowig_chbx:before{
+	background-image:url(../images/backend_post/checkmark_2.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	content:"";
+	opacity:0.3;
+	width:100%; height:100%; display:block;
+}
+.evowig_chbx.selected{
+	background-image:url(../images/backend_post/checkmark_2.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+.legend_icon{
+	text-align: center;
+	background-color: #e6e6e6;
+	font-style: normal;
+	position: absolute;
+	right: 8px;
+	cursor: pointer;
+	top: 9px;
+	height: 15px;
+	width: 15px;
+	border: 1px solid #c9c9c9;
+	-webkit-box-shadow: 0px 0px 5px 0px #cfcfcf;
+	box-shadow: 0px 0px 5px 0px #cfcfcf;
+}
+.legend_icon:hover{background-color:#fff;}
+.legend{
+	font-style:italic;
+	position: absolute;
+	right: 9px;
+	width: 200px;
+	background-color: #fff;
+	padding: 8px;
+	top: 25px;
+	-webkit-box-shadow: 0px 3px 3px 0px #cfcfcf;
+	box-shadow: 0px 3px 3px 0px #cfcfcf;
+	z-index: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

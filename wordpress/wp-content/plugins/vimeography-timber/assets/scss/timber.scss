@@ -1,0 +1,273 @@
+/* Any theme specific CSS declarations can be written here. */
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+.fancybox-inner {
+  overflow: visible !important;
+}
+
+.vimeography-timber {
+  * {
+    box-sizing: border-box;
+  }
+
+  $blue: #3f729b;
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    line-height: 1em;
+    word-spacing: -0.15em;
+    font-weight: 300;
+  }
+
+  .vimeography-thumbnails {
+
+    /* Clearfix */
+    &:before, &:after {
+      content: "";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+
+    *zoom: 1;
+    /* End Clearfix */
+
+    .vimeography-thumbnail-column {
+      float:left;
+    }
+
+    .text {
+      margin: 0;
+      /* position: absolute; */
+      right: 30px;
+      left: 30px;
+      padding: 10px 0;
+    }
+
+    figure {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      overflow: hidden;
+      margin: 0.4em;
+      background: #3085a3;
+      text-align: center;
+      cursor: pointer;
+
+      img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        opacity: 0.8;
+      }
+
+      figcaption {
+        padding: 2em;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+      }
+
+      h1 {
+        @extend .text;
+        top: 30px;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0,20px,0);
+        transform: translate3d(0,20px,0);
+
+        &::after {
+          opacity: 0;
+          -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+          transition: opacity 0.35s, transform 0.35s;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background: #fff;
+          content: '';
+          -webkit-transform: translate3d(0,40px,0);
+          transform: translate3d(0,40px,0);
+        }
+      }
+
+      p {
+        @extend .text;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 1px;
+        font-size: 68.5%;
+        bottom: 30px;
+        line-height: 1.5;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+      }
+
+      a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+      }
+
+      &:hover {
+        h1 {
+          -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+        }
+
+        h1::after, p {
+          opacity: 1;
+          -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+        }
+      }
+    }
+  } /* End .vimeography-thumbnails */
+
+  .vimeography-paging-controls {
+
+      display: none;
+      margin: 15px auto;
+      clear: both;
+      text-align: center;
+
+    > span {
+      position: relative;
+      top: -10px;
+      padding: 0 30px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .vimeography-paging {
+      font-family: 'Entypo', sans-serif;
+      font-size: 60px;
+      text-decoration: none;
+      color: rgba(0,0,0,1);
+      opacity: 1;
+
+      &:hover {
+        color: rgba(0,0,0,1);
+        opacity: .75;
+      }
+    }
+
+    .vimeography-paging-disabled,
+    .vimeography-paging-disabled:hover {
+      color: rgba(0, 0, 0, 1);
+      opacity: .20;
+    }
+  }
+
+  .vimeography-loader { opacity: 0; }
+
+  /* End Paging */
+
+  &.vimeography-template-container {
+    display: none;
+  }
+
+  &.vimeography-template {
+
+    position: relative;
+
+    /* Clearfix */
+    &:before, &:after {
+      content: "";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+
+    *zoom: 1;
+    /* End Clearfix */
+
+    .vimeography-controls {
+      &.vimeography-close {
+        position: absolute;
+        right: 0;
+        color: #fff;
+        top: -25px;
+        font-size: 22px;
+        cursor: pointer;
+      }
+    }
+
+    .vimeography-video {
+      float: left;
+      width: 70%
+    }
+
+    hr {
+      color: #dadee3;
+    }
+
+    .vimeography-data {
+      float: left;
+      width: 30%;
+      padding: 10px 20px;
+      overflow-y: auto;
+      word-wrap: break-word;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #f4f4f4;
+
+      h1 {
+        background-color: #f4f4f4;
+        color: #292d33;
+        font-size: 20px;
+      }
+
+      a {
+        font-weight: 400;
+        color: $blue;
+        color: #4cb5c2;
+      }
+
+      .vimeography-description,
+      .vimeography-downloads {
+        word-wrap: break-word;
+        color: #686d73;
+        line-height: 1.5em;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .vimeography-downloads {
+        margin: 10px 0 0;
+        font-weight: bold;
+
+        a {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

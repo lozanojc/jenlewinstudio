@@ -1,0 +1,190 @@
+/*-- AJDE backender styles --*/
+#acus_arrow{
+	background: url(../images/ajde_backender/ajde_arrow.png) top left no-repeat;
+	display:block; height:28px; width:16px;margin:0 0 0 -15px;
+	position:absolute
+}
+
+#ajde_customization td, #ajde_customization{margin:0; padding:0; border:none; border-spacing:0}
+#acus_left, #acus_right{border:1px solid #d9d7d7;}
+#acus_left{
+	min-height:auto;
+	border-bottom:none;
+	border-right:none;
+	width:155px;
+}
+#acus_left ul, #acus_left ul li{margin:0}
+#acus_left ul a{cursor:pointer}
+
+#acus_left ul .level2 a{background-color: #e3e2e2;border-bottom:1px solid #b7b7b7;	}
+#acus_left ul .level2 a:hover{background-color:#d8d7d7;}
+#acus_left ul .level3 a{text-shadow: 0 1px #E8E8E8;color:#3d3d3d;background-color: #d0d0d0; border-bottom:1px solid #b7b7b7;}
+#acus_left ul .level3 a:hover{background-color:#c8c8c8;}
+
+.backender_yn_sec{
+	background-color: #E6E6E6;
+	margin-top: -10px;
+	padding: 10px 10px 0;
+}
+.backender_yn_sec em.hr_line{
+	margin:10px -10px;
+	border-bottom:1px solid #dbdbdb;
+}
+
+#acus_left ul a.focused{
+	color:#3d3d3d;
+	border-left:3px solid #dfa872;
+	margin-left:-1px;
+}
+#acus_left ul a, #acus_left ul p{
+	color:#a8a8a8;
+	display:block; text-decoration:none;
+	padding:10px;
+	border-bottom:1px solid #d9d7d7;margin:0;
+	border-left:2px solid transparent;
+	background-color: #f8f7f7;
+	font-size:13px;line-height:130%;
+	outline:none
+}
+#acus_left ul a:hover{
+	background-color:#f4f4f4; 
+	color:#3d3d3d; 
+	outline:none;
+}
+#acus_left ul p{font-style:italic; font-family:georgia; color:#aeaeae}
+#acus_left ul a.ny_subfield{background-color:#fdfdfd}
+#acus_left ul a.ny_afterfield{background-color:transparent; color:#fff; border-bottom:1px solid #a6a6a6}
+#acus_right{	
+	background-color:#eeeeee; position:relative;
+	min-height:400px;
+}
+
+#acus_right .customization_right_in{padding:20px; min-width:410px}
+#acus_right h3{border:none;moz-box-shadow: none;-webkit-box-shadow: none;box-shadow:none; background-color:transparent;
+	background-image:none;
+	font-family:georgia; font-style:italic; font-size:18px;
+	padding:0 0 10px
+}
+.customization_right_in p{margin:0 0 3px; color:#6f6f6f}
+.customization_right_in .nfe_f_width input, .customization_right_in .nfe_f_width textarea{
+	width:100%;
+	color:#666666;
+	padding:5px 8px;
+}
+
+/* horizontal divider */
+em.hr_line{border-bottom:1px solid #e5e4e4; display:block; margin:7px -20px}
+em.hr_line.noexpand{margin:10px -10px}
+
+
+.nfer textarea{width:100%; height:80px}
+.nfer .notice{
+	margin:15px -20px;
+	padding:5px 20px;
+	background-color:#f2e3c2;
+	border-top:1px solid #e9cfab;
+	border-bottom:1px solid #e9cfab;
+}
+
+.acus_line.acus_checks span{display:block; padding:3px 0; font-style:italic}
+.acus_line.acus_checks input{width: 20px;text-align: left;display:none}
+.acus_line.acus_checks input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../images/ajde_backender/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+.acus_line.acus_checks input[type="checkbox"]:checked + label span {
+    background:url(../images/ajde_backender/check_radio_sheet.png) -19px top no-repeat;
+}
+
+.acus_line.acus_radio input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../images/ajde_backender/check_radio_sheet.png) -38px top no-repeat;
+    cursor:pointer;
+}
+.acus_line.acus_radio input[type="radio"]{display:none}
+.acus_line.acus_radio input[type="radio"]:checked + label span {
+    background:url(../images/ajde_backender/check_radio_sheet.png) -57px top no-repeat;
+}
+
+
+.acus_line input{width:120px}
+.acus_line em{width:200px; position:relative}
+.acus_colorp{position:absolute;margin-left:125px; 
+	display:block;height:19px; width:20px; top:0; margin-top:-2px;background-color:#206177}
+
+h4.acus_subheader{font:16px georgia italic; margin:0;color:#5d5d5d}
+.acus_radio em{display:block; padding-bottom:5px;width:100%}	
+.acus_radio input{width:15px; text-align:left;}
+.legend{
+	position:absolute;
+	right:0;
+	width:200px;
+	background-color:#fff;
+	padding:8px;
+	top:19px;
+	-webkit-box-shadow:  0px 5px 5px 0px #cfcfcf;        
+    box-shadow:  0px 5px 5px 0px #cfcfcf;
+	z-index:400
+}
+.legend_icon{
+	text-align:center;
+	background-color:#e6e6e6;
+	font-style:normal;
+	position:absolute;
+	right:0;cursor:pointer; top:4px;
+	height:15px; width:15px;
+	border:1px solid #c9c9c9;
+	-webkit-box-shadow:  0px 0px 5px 0px #cfcfcf;        
+    box-shadow:  0px 0px 5px 0px #cfcfcf;
+}
+.legend_icon:hover{background-color:#fff}
+
+
+.yesno_row{position:relative;min-height:26px}
+.yesno_row span{	
+	padding-left:77px;
+	padding-top:4px;
+	display:block; 
+}
+.yesno_row .acus_yn_btn{
+	position:absolute;
+}
+
+.acus_yn_btn{
+	background:url(../images/ajde_backender/yes_no_btn.png) left top no-repeat;
+	height:26px;
+	width:68px;
+	display:inline-block; cursor:pointer;
+	outline:none;
+}
+.acus_yn_btn:focus{outline:none}
+.acus_yn_btn.btn_at_no{
+	opacity:0.6;
+	background-position: 0 -26px;
+}
+.acus_yn_btn.btn_at_no:hover{opacity:1}
+
+.backender_left{width:295px;	}
+
+@media only screen and (max-width: 900px){
+	#acus_left{width:45px}
+	.backender_left{width:70px}
+	#acus_left ul a{
+		text-indent:-9999px;
+		width:25px;
+		background: url(../images/ajde_backender/backender.png) 10px no-repeat
+	}
+}
+
+
+/*-- customization styles --*/
+

@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+body {
+	opacity:0;
+	transition: all 0.75s ease;
+}
+
+#page {
+	max-width: 950px;
+	margin: 20px auto;
+}
+
+.content-area {
+	float: left;
+	margin:0 auto;
+	width: 100%;
+}
+
+.site-main {
+	margin: 0 auto;
+}
+
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: 25%;
+}
+
+.site-footer {
+	clear: both;
+	width: 100%;
+}
+
+
+.sidebar-content {
+	margin:0;
+	padding-left:0;
+	margin-bottom:20px;
+
+	p {
+		font-size:12px;
+	}
+}
+
+.page-template-page-full .entry-content {
+	padding: 0;
+}

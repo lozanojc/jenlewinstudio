@@ -1,0 +1,10 @@
+{{#videos}}
+  <figure class="vimeography-thumbnail">
+    <img alt="{{name}}" src="{{thumbnail_large}}">
+    <figcaption>
+      <h1>{{name}}</h1>
+      <p>{{created_time}}</p>
+      <a href="{{link}}" title="{{name}}" data-video-width="{{width}}" data-video-height="{{height}}" data-description="{{description}}"{{#allow_downloads}}{{#download}} data-download-{{quality}}="{{link}}"{{/download}}{{/allow_downloads}}>View more</a>
+    </figcaption>
+  </figure>
+{{/videos}}

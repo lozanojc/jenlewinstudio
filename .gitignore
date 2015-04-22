@@ -1,0 +1,38 @@
+# WP Core
+wordpress/wp-admin
+wordpress/wp-includes
+wordpress/wp*.php
+wordpress/xmlrpc.php
+wordpress/index.php
+wordpress/license.txt
+wordpress/readme.html
+
+# WP Default Themes
+wordpress/wp-content/themes/unused_templates
+
+
+# Node, SASS, etc
+wordpress/wp-content/themes/jenlewin_theme/node_modules
+
+
+
+# WP Plugins managed by Composer
+wordpress/wp-content/plugins/hello.php
+
+# https://github.com/github/gitignore/blob/master/WordPress.gitignore
+*.log
+wordpress/.htaccess
+wordpress/sitemap.xml
+wordpress/sitemap.xml.gz
+wordpress/wp-config.php
+wordpress/wp-content/advanced-cache.php
+wordpress/wp-content/backup-db/
+wordpress/wp-content/backups/
+wordpress/wp-content/blogs.dir/
+wordpress/wp-content/cache/
+wordpress/wp-content/upgrade/
+wordpress/wp-content/uploads/
+wordpress/wp-content/wp-cache-config.php
+
+/.DS_Store
+.DS_Store

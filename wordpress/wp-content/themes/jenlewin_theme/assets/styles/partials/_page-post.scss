@@ -1,0 +1,144 @@
+/* ==========================================================================
+   Posts and pages
+   ========================================================================== */
+
+.sticky {
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+
+	img {
+		width:600px;
+	}
+}
+
+.byline,
+.updated {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.entry-content {
+	margin:0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+.wp-caption {
+	border: 1px solid #ccc;
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 1.2% auto 0;
+	max-width: 98%;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.site-main .gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-caption {
+}
+
+.site-main .gallery a img {
+	border: none;
+	height: auto;
+	max-width: 90%;
+}
+
+.site-main .gallery dd,
+.site-main .gallery figcaption {
+	margin: 0;
+}
+
+.site-main .gallery-columns-4 .gallery-item {
+}
+
+.site-main .gallery-columns-4 .gallery-item img {
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+
+.search-results {
+	
+	.page-header {
+		margin-bottom: 50px;
+	}
+
+	.hentry{
+		margin-bottom:50px;
+	}
+
+	.entry-title a {
+		color: $color-2;
+		text-decoration: none;
+	}
+}
+
+
+.error404{
+	.searchform{
+		width:70%;
+
+		.icon {
+			position: relative;
+			float: right;
+			display: inline-block;
+			width: auto;
+			top: -53px;
+
+			input#searchsubmit {
+				position: relative;
+				width: 60px;
+				height: 37px;
+				background-image: url(http://jenlewinstudio.com/wp-content/uploads/2015/01/search-icon-white.png);
+				background-color: $color-2;
+				background-repeat: no-repeat;
+				background-position-x: 20px;
+				background-position-y: 8px;
+				border-radius: 0 2px 2px 0;
+				float: right;
+				border: none;
+			}
+		}
+	}
+}

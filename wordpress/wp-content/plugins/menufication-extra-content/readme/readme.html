@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Menufication Extra Content</title>
+
+</head>
+<body>
+<h1>Menufication Extra Content</h1>
+
+<p><strong>Menufication Extra Content v1.0</strong></p>
+
+<p>Thank you for purchasing our plugin - Menufication Extra Content. If you have any questions that are beyond the scope of this readme file, please feel free to email us via our user page contact form <a href="http://codecanyon.net/user/iveo">here</a>. Thanks so much!</p>
+
+<h2>Table of contents</h2>
+
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#files">Files Included</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#notes">Important Notes</a></li>
+<li><a href="#support">Browser Support</a></li>
+<li><a href="#deps">Dependencies</a></li>
+</ul>
+
+
+<h2><p id="features">Features</p></h2>
+
+<ul>
+<li>Generates a responsive fly-out content area (similar to Facebook mobile applications).</li>
+<li>Swipe the screen to open/close the menu (iOS only in v1).</li>
+<li>Includes two beautiful themes, one dark and one light.</li>
+<li>Add any content! Shortcodes, images, text.</li>
+<li>Option to only generate the menu on predefined browser sizes.</li>
+<li>Option to only generate the menu on mobile devices.</li>
+<li>Utilizes CSS-tranforms for optimal performance. Falls back to jQuery animations when CSS-transforms are not supported.</li>
+<li>Only dependency is jQuery.</li>
+</ul>
+
+
+<h2><p id="files">Files Included</p></h2>
+
+<h5>PHP-files</h5>
+
+<p>This plugin ships with one main php-file.</p>
+
+<h5>CSS-files</h5>
+
+<p>There are two CSS-files included, one for the styling of the actual menu and one for the admin-page. If you wish to make some changes to the styling of the plugin this should <strong>not</strong> be done in the <code>offcanvas.min.css</code>, but instead in the settings section.</p>
+
+<h5>JavaScript-files</h5>
+
+<p>There are three JavaScript-files included in this plugin. One is simply for hiding/showing the advanced settings in the admin-area. The main work is done by <code>jquery.offcanvas.min.js</code> and <code>offcanvas-setup.js</code>.</p>
+
+<h2><p id="setup">Setup</p></h2>
+
+<h3><p id="setup-installation">Installation</p></h3>
+
+<ul>
+<li>Unzip the .zip-folder.</li>
+<li>Upload the unzipped folder to your plugin folder in wp-content.</li>
+<li>Activate the plugin on the plugins page in Wordpress Admin.</li>
+</ul>
+
+
+<p>You can read more about manual installation of pugins <a href="http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation">here</a>.</p>
+
+<h3><p id="setup-settings">Customize settings</p></h3>
+
+<ul>
+<li>To access the settings for Menufication Extra Content, click 'Settings' => 'Menufication Extra Content' in the admin-panel.</li>
+</ul>
+
+
+<p>All other settings are explained on the settings-page for the plugin.</p>
+
+<h3><p id="setup-settings">Compatability with Menufication Plugin</p></h3>
+
+<p>Menufication Extra Content works great with Menufication. When you install Menufication the extra content area will seamlessly integrate with Menufication and be shown on the opposite side of the menu.</p>
+
+<h2><p id="notes">Important notes</p></h2>
+
+<p>Below are some important notes about this plugin.</p>
+
+<p><strong>You should only have to worry about this section if you are an advanced user wanting to understand and change the behavior of the plugin.</strong></p>
+
+<p>This plugin uses advanced CSS3-features to enable native-like performance.</p>
+
+<h2><p id="support">Browser Support</p></h2>
+
+<p>The following browsers are officially supported and tested (Browser > Version):</p>
+
+<h5><p id="support-desktop">Desktop</p></h5>
+
+<ul>
+<li>Chrome >= 20</li>
+<li>Mozilla Firefox >= 15</li>
+<li>Safari >= 5</li>
+<li>Opera >= 12</li>
+<li>Internet Explorer >= 9</li>
+</ul>
+
+
+<h5><p id="support-mobile">Mobile</p></h5>
+
+<ul>
+<li>Chrome for Android / iOS</li>
+<li>Firefox for Android</li>
+<li>AndroidBrowser for Android</li>
+<li>Safari Mobile for iOS</li>
+</ul>
+
+
+<p>Wordpress Menufication does not currently support Internet Explorer Mobile or Blackberry. Support will be added in upcoming versions.</p>
+
+<p><strong> Nothing will break on unsupported browsers - the menu will just simply not appear. </strong></p>
+
+<h2><p id="deps">Dependencies</p></h2>
+
+<ul>
+<li>jQuery >= 1.7.0</li>
+</ul>
+
+</body>
+</html>
